@@ -17,6 +17,7 @@ public class TitleScreenHandler : MonoBehaviour //INHERITANCE, default from unit
     void Start()
     {
         vehicleIndex = GameManager.instance.vehicleIndex;
+        UpdateSelectionVehicle();
     }
 
     public void SwitchRight()
@@ -38,6 +39,7 @@ public class TitleScreenHandler : MonoBehaviour //INHERITANCE, default from unit
         }
         else if (vehicleIndex < 0) vehicleIndex = vehicleName.Length - 1; //Length - 1 will select the last index
         vehicleSelectionDText.text = vehicleName[vehicleIndex]; //changing the text
+        GameManager.instance.vehicleIndex = vehicleIndex;
     }
 
     public void GoToMainGameplay()

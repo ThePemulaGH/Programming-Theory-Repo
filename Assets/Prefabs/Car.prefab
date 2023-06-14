@@ -93,7 +93,7 @@ SphereCollider:
   m_GameObject: {fileID: 2597100147550466655}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -190,7 +190,7 @@ SphereCollider:
   m_GameObject: {fileID: 2958936920139497425}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -255,7 +255,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0bc800c6f239e794fb5245be62f80b76, type: 2}
+  - {fileID: 2100000, guid: a559a230d6279d340a09105e1b77ee39, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -370,7 +370,7 @@ SphereCollider:
   m_GameObject: {fileID: 4086867277922667164}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -386,6 +386,8 @@ GameObject:
   - component: {fileID: 8736115439189372233}
   - component: {fileID: 7303722345759212508}
   - component: {fileID: 5438301626007690432}
+  - component: {fileID: 7105985702803688681}
+  - component: {fileID: 140082448447241003}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -477,6 +479,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.3213248, y: 0.73111117, z: 7.0352793}
   m_Center: {x: 0.020247936, y: 0.13444442, z: 0.19449186}
+--- !u!54 &7105985702803688681
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5045222741214380234}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &140082448447241003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5045222741214380234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183a5302aec4f074d8f704c4e6f6141f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalInput: 0
+  verticalInput: 0
 --- !u!1 &6822691144254940235
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,7 +602,7 @@ SphereCollider:
   m_GameObject: {fileID: 6822691144254940235}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
