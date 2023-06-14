@@ -1,0 +1,7 @@
+Very Simple Project Brief
+
+This Project contains 2 Scenes:
+	- Title Screen
+		-> Here, player select one of the available vehicles to choose. Change the selection by clicking the arrow button. After that, click the Start Button to play with the chosen vehicle.
+	- Main Gameplay
+		-> Here, the player will explore the terrain. Player control here includes basic horizontal and vertical input (WASD or directional arrows).
